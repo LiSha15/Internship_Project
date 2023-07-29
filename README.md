@@ -3,4 +3,4 @@ A digital platform called the Indian Railway Complaint System Project was create
 It tries to enhance the way users'complaints are resolved. The project uses technology and internet resources to streamline the filing, following up on, 
 and handling of complaints.
 
-Software used CSS, Javascript, Html, Bootstrap.
+Software used Html, CSS and Javascript .
