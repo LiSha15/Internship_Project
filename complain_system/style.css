@@ -1,0 +1,217 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  background-image: url(blue_train.jpg); 
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
+  margin: 0;
+
+ 
+}
+
+.container {
+  position: fixed;
+  max-width: 650px;
+  /* width: 100%; */
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  min-height: 615px;
+  margin-right: 50px;
+  padding-top: 25PX;
+  transform: translate(130%, 20%);
+  
+
+}
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container header h2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 22px;
+  color: blueviolet;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 10px;
+
+}
+
+.container .form {
+  margin-top: 0px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+
+
+.form-control {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+}
+
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.labelText {
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: 400;
+  padding-bottom: 5px;
+  display: block;
+}
+
+
+.form .box {
+  width: 100%;
+  object-fit: cover;
+  line-height: normal;
+  resize: none;
+  height: 125px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  border: 1px solid rgb(212, 211, 211);
+  background-color: #f4f5f6;
+  border-radius: 5px;
+  overflow: auto;
+
+}
+
+.btn {
+
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px 5px;
+  padding: 9px 25px;
+  line-height: 23px;
+  border: 0;
+  color: #f4f5f6;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: blueviolet;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: right;
+  margin: 20px -10px 5px;
+}
+
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+.mandatoryNote {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index:-1; 
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  padding: 40px 25px;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 600px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  /* body{
+    background-image: url(steam-train-speeds-through-rural-sunset-scenery-generated-by-ai.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+  } */
+
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+
+  .container {
+    margin-right: 0px;
+  }
+}
